@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+  font-size:12px; 
+}
+.horizontaltab
+{  
+  background: #BEDCFF;
+}
+.horizontaltab ul li
+{
+width:80px;	 
+background-color: #BEDCFF;
+color:#000000;
+
+}
+
+.horizontaltab ul li.hover
+{
+  background:#eaf1fc url('../images/tableHead.gif') repeat-x;
+}
+
+/*
+竖向样式控制
+*/
+.verticaltab
+{ 
+	position: relative;
+	float: left;
+	border-right: 1px solid #95C9E1;
+	background: #BEDCFF;
+}
+.verticaltab ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 0px;
+	text-align: center;
+	font-size:14px;
+}
+.verticaltab ul li
+{
+	display: block;
+	cursor: pointer;
+	height:40px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 5px;
+	width:15px;
+	background-color: #BEDCFF;
+    color:#000000;
+    padding-top:10px;
+}
+.verticaltab ul li.hover
+{ 
+	background: #fff;
+	color: #739242;
+	height:40px;
+	width: 15px;
+	border-left: 1px solid #95C9E1;
+	border-top: 1px solid #95C9E1;
+	border-right:0px solid #95C9E1;
+	border-bottom: 1px solid #95C9E1;
+	padding-top:10px;
+}
+.verticaltab-content
+{
+	clear: both;
+	margin-top: 0px;
+	padding: 0px;
+	border-top: none;
+	height: 100%;
+	border: 1px solid #95C9E1;
+	margin-left: 25px;
+	_margin-left: 12px;
+}
+.verticaltab-content div
+{
+	width:200px;
+	float:left;
+} 
+
+
+.osTable{
+background: #9F8F78;
+margin-top:5px;
+margin-bottom:5px;
+margin-right:10px;
+margin-left:5px;
+text-align:left;
+}
+.osTable th{
+background-color:#F7D28C;
+height:25px;
+background:url('../images/opTableHeader.png') repeat-x;
+font-size:12px; 
+ 
+}
+.osTable td{
+background-color:#FFFFFF;
+height:20px;
+ font-size:12px; 
+
+}
+.osTable tbody .selClass td{
+background-color:#DCE8F6;
+
+}
+
+.osTable tfoot td{
+background-color:#DCE9F5;
+
+}
+.tdText {
+	padding-left: 20px;
+	width: 120px;
+}
+.filterDiv{
+
+  float:left;
+  height:18px;
+  width:18px;
+  border:#9FC2EF solid 1px;
+  background:#E3EEFD url(../includes/images/filterDiv.png) repeat-x ;
+  font-size:16px; 
+  vertical-align:middle;
+  text-align:center;
+    cursor:pointer;
+	font-weight:bold;
+	margin-left:2px;
+}
+.buttonDiv{
+  padding-top:5px;
+}
+.padding{
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+}
+.titleDiv{
+
+border-bottom:1px #ACA899 solid;
+border-bottom-length:90px;
+font-size:18px;
+font-weight:bold;
+}
+.infoDiv{
+font-size:14px;
+padding-bottom:8px;
+padding-top:8px;
+}
+.fieldsetClass { 
+  padding-top:10px;
+  font-size:14px;
+  margin:auto;
+} 
+.fieldsetClass legend { 
+}
+
+.tableContent
+{
+	border:0px;
+	color:#444;
+	width:100%;
+}
+
+.tableContent A
+{
+	color:#2159A4;
+	text-decoration:none;
+}
+
+.tableContent .tr0 td
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:white;
+}
+.tableContent .tr1 td
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:#f8f8f8;
+}
+
+
+
+
+
+
+

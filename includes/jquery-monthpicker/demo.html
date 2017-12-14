@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>monthpicker</title>
+    <link rel="stylesheet" type="text/css" href="jquery.monthpicker.css">
+    <script src="../jquery/jquery-1.11.3.min.js"></script>
+    <script src="jquery.monthpicker.js"></script>
+    <script>
+        $(function(){
+            $('#monthpicker1').monthpicker({
+                years: [2015, 2014, 2013, 2012, 2011],
+                topOffset: 6,
+                onMonthSelect: function(m, y) {
+                    console.log('Month: ' + m + ', year: ' + y);
+                }
+            });
+
+            $('#monthpicker2').monthpicker({
+                years: [2015, 2014, 2013, 2012, 2011],
+                topOffset: 6
+            })
+
+            $('#monthpicker3').monthpicker({
+                years: [2015, 2014, 2013, 2012, 2011],
+                topOffset: 6,
+                onMonthSelect: function(m, y) {
+                    console.log('Month: ' + m + ', year: ' + y);
+                }
+            });
+
+            $('#monthpicker4').monthpicker({
+                years: [2015, 2014, 2013, 2012, 2011],
+                topOffset: 6
+            })
+        });
+    </script>
+</head>
+<body>
+    <a href="#monthpicker" id="monthpicker1">2012-01</a><br/>
+    <input type="text" class="input" id="monthpicker2" value="2012-01" readonly><br/>
+
+    <a href="#monthpicker" id="monthpicker3"></a><br/>
+    <input type="text" class="input" id="monthpicker4"><br/>
+
+    <br/>
+    参数years是一个数组，可以设置年份<br/>
+    参数topOffset就是触发弹出的面板与当前元素的偏移距离<br/>
+    onMonthSelect是选择月份后的回调函数
+</body>
+</html>

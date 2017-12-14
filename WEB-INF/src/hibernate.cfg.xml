@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- c3p0 配置 -->
+        <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+        <!-- 最大连接数 -->
+        <property name="hibernate.c3p0.max_size">20</property>
+        <!-- 最小连接数 -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <!-- 获得连接的超时时间,如果超过这个时间,会抛出异常，单位毫秒 -->
+        <property name="hibernate.c3p0.timeout">120</property>
+        <!-- 用来配置测试连接的一种方式, 如果使用此种方式测试链接,配置的 preferredTestQuery 方式将会被忽略。 -->
+        <!--WARN : org.hibernate.engine.jdbc.internal.JdbcServicesImpl - HHH000342 检查数据库中是否有表 c3p0test -->
+        <property name="automaticTestTable">C3P0TEST</property>
+        <!-- 最大的PreparedStatement的数量 -->
+        <property name="hibernate.c3p0.max_statements">100</property>
+        <!-- 每隔120秒检查连接池里的空闲连接 ，单位是秒-->
+        <property name="hibernate.c3p0.idle_test_period">120</property>
+        <!-- 当连接池里面的连接用完的时候，C3P0一下获取的新的连接数 -->
+        <property name="hibernate.c3p0.acquire_increment">5</property>
+        <!-- 每次都验证连接是否可用
+        因性能消耗大请只在需要的时候使用它。如果设为true那么在每个connection提交的
+        时候都将校验其有效性。建议使用idleConnectionTestPeriod或automaticTestTable
+        等方法来提升连接测试的性能。Default: false
+        -->
+        <property name="c3p0.testConnectionOnCheckout">true</property>
+        <!-- 每300秒检查所有连接池中的空闲连接。Default: 0 -->
+        <property name="c3p0.idleConnectionTestPeriod">18000</property>
+        <!-- 最大空闲时间,120秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+        <property name="c3p0.maxIdleTime">2500</property>
+        <!-- 每隔多少秒检测连接是否可正常使用 (去销毁timeout超时的)-->
+        <property name="c3p0.idle_test_period">120</property>
+
+        <!-- hibernate 配置 -->
+        <!-- mysql-->
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!--<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/openfree</property>-->
+        <!--<property name="hibernate.connection.username">root</property>-->
+        <!--<property name="hibernate.connection.password">123456</property>-->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+        <property name="show_sql">true</property>
+
+
+        <mapping class="com.sten.framework.model.UploadFile"/>
+
+		<mapping class="com.sten.mtcc.model.RpUser"/>
+		<mapping class="com.sten.mtcc.model.BzTelCostIndex"/>
+		<mapping class="com.sten.mtcc.model.BzTelCostList"/>
+		<mapping class="com.sten.mtcc.model.BzTelCostDetail"/>
+		<mapping class="com.sten.mtcc.model.BiDeptInfo"/>
+		<mapping class="com.sten.mtcc.model.BiDeptInfoHis"/>
+		<mapping class="com.sten.mtcc.model.BiTelInfo"/>
+		<mapping class="com.sten.mtcc.model.BiTelInfoHis"/>
+		<mapping class="com.sten.mtcc.model.BiCodeBsce"/>
+		<mapping class="com.sten.mtcc.model.BzTelCostCompare"/>
+    </session-factory>
+</hibernate-configuration>

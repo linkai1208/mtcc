@@ -1,0 +1,56 @@
+html {
+    overflow-x: hidden;
+    overflow-y:auto
+}
+.headNav {
+    background-color:#167ecd;
+    color:white;
+    margin-right:0px;
+    border:0px;
+}
+
+#navBody {
+    background-color:#eeeeee;
+}
+
+.headArea {
+    height:30px;
+    background-color: #1888de;
+    vertical-align: middle;
+    line-height: 30px;
+    color:white;
+    padding-left:10px;
+    font-size: 12px;
+}
+
+.adminHeadArea {
+    height:50px;
+    background-color: #1888de;
+    vertical-align: middle;
+    line-height: 50px;
+    color:white;
+    padding-left:10px;
+}
+
+.nav-list li a {
+    color:white;
+    font-size: 12px
+}
+
+/*.nav-list li a:focus {*/
+    /*color:black;*/
+/*}*/
+
+/*.nav-list li a:hover {*/
+    /*color:black;*/
+/*}*/
+
+/*.nav-list li a:active {*/
+    /*color:black;*/
+/*}*/
+
+legend {
+    color: #167ecd;
+    font-size: 16px;
+    padding-left:10px
+}

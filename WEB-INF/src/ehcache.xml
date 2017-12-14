@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         updateCheck="false">
+
+    <diskStore path="caches"/>
+
+    <defaultCache eternal="false"
+                  timeToIdleSeconds="3600"
+                  timeToLiveSeconds="3600"
+                  maxEntriesLocalHeap="1000"
+                  overflowToDisk="false"
+                  diskPersistent="false"/>
+
+    <cache name="caches"
+           eternal="true"
+           timeToIdleSeconds="0"
+           timeToLiveSeconds="0"
+           maxEntriesLocalHeap="200"
+           overflowToDisk="false"
+           diskPersistent="false"
+           statistics="true"/>
+
+    <!--
+        eternal
+                    缓存是否永久有效（true/false）
+                    当配置true时，如果同时配置timeToLiveSeconds/timeToIdleSeconds不为0，程序就会报以上警告
+        timeToIdleSeconds
+                    缓存创建以后，最后一次访问缓存之时至失效之时的时间间隔，单位为秒，默认为0，永不过期
+        timeToLiveSeconds
+                    缓存自创建之时起至失效时的间隔时间单位为秒，默认为0，代表无限长，即缓存永不过期
+        maxEntriesLocalHeap
+                    是用来限制当前缓存在堆内存上所能保存的最大元素数量
+        overflowToDisk="false"
+                    当缓存达到 maxElementsInMemory 值时,是否允许溢出到磁盘(必须设置)
+        diskPersistent="false"
+                    磁盘缓存在VM重新启动时是否保持(默认为false)
+        statistics
+                     Cache statistics. Change dynamically withcache.setStatistics(boolean) method.
+        maxElementsInMemory="1000"
+                    缓存容量的内存最大值(必须设置)
+                    当内存缓存中对象数量超过 maxElementsInMemory 时,将缓存对象写到磁盘缓存中(需对象实现序列化接口)
+        memoryStoreEvictionPolicy="LFU"
+                    内存存储与释放策略, 即超过 maxElementsInMemory 限制时, Ehcache 会根据指定策略清理内存
+                    共有三种策略, 分别为LRU(最近最少使用)、LFU(较少使用)、FIFO(先进先出)
+    -->
+</ehcache>

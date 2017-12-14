@@ -1,0 +1,234 @@
+﻿html, body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Microsoft YaHei', SimSun, Arial;
+}
+
+
+#header {
+    height: 50px;
+    padding: 0 20px;
+    display: block;
+    overflow: hidden;
+    background-color: #3c8dbc;
+    color: #fff;
+}
+
+    #header h1 {
+        font-family: 'Microsoft YaHei UI', 'Microsoft YaHei';
+        float: left;
+        font-size: 18px;
+        font-weight: normal;
+        padding: 0px;
+        margin: 10px 0 0 20px;
+    }
+
+    #header a:link, #header a:active, #header a:visited {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 28px;
+        height: 50px;
+        padding: 10px;
+        display: block;
+        float: right;
+    }
+
+    #header a:hover {
+        background-color: #367faa;
+    }
+
+    #header .selected {
+        background-color: #367faa;
+    }
+
+
+#subsys-list {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-color: #367faa;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+    #subsys-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    #subsys-list li {
+        display: block;
+        height: 35px;
+        line-height: 30px;
+        cursor: pointer;
+        padding: 0 20px;
+        border-bottom: 1px solid #3988b3;
+    }
+
+        #subsys-list li:hover {
+            background-color: #3c8dbc;
+        }
+
+
+
+#user-info {
+    position: absolute;
+    z-index: 1;
+    width: 270px;
+    display: block;
+    padding-top: 3px;
+    background-color: #367faa;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.user-img-bg {
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+    .user-img-bg span {
+        display: block;
+    }
+
+#user-img {
+    max-width: 90px;
+    max-height: 90px;
+    border: 3px solid;
+}
+
+#user-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #555;
+    font-size: 12px;
+}
+
+#user-info li {
+    display: block;
+    line-height: 30px;
+    cursor: pointer;
+    text-indent: 2em;
+    background-color: #fefefe;
+    border-bottom: 1px solid #ddd;
+}
+
+    #user-info li:hover {
+        background-color: #efefef;
+    }
+
+
+
+#sidebar {
+    display: block;
+    width: 230px;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    background-color: #2c4d6a;
+    overflow: hidden;
+}
+
+.menu-root {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+    .menu-root li {
+        display: block;
+        line-height: 40px;
+        cursor: pointer;
+        padding: 0;
+        text-indent: 2em;
+        position: relative;
+        border-bottom: 1px solid #00426b;
+    }
+
+    .menu-root i {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        margin-top: -7px;
+    }
+
+    .menu-root .root-selected {
+        background-color: #367faa;
+    }
+
+.menu-sub {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+    background-color: #2a3e52;
+}
+
+    .menu-sub li {
+        display: block;
+        line-height: 30px;
+        cursor: pointer;
+        padding: 0;
+        text-indent: 4em;
+        border: 0;
+    }
+
+    .menu-sub .sub-selected {
+        color: #3498db;
+    }
+
+#sidebar-button {
+    display: block;
+    width: 10px;
+    height: 41px;
+    text-align: center;
+    color: #dfdfdf;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 230px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    #sidebar-button i {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -7px;
+    }
+
+
+#content {
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    top: 50px;
+    left: 230px;
+    background-color: #fefefe;
+}
+
+
+
+.img-circle {
+    border-radius: 50%;
+}
+
+
+/*
+    fix 滚动条
+*/
+.mCSB_inside > .mCSB_container {
+    margin-right: 0px;
+}

@@ -1,0 +1,252 @@
+﻿/*
+    Created by IntelliJ IDEA.
+    User: chairui
+    Date: 16-3-9
+    Ver:  1.5
+*/
+
+html, body {
+    padding:0px;
+    margin:0px;
+    font-family:'Microsoft YaHei', SimSun, Arial;
+}
+#header
+{
+    height:90px;
+    padding:0;
+    display:block;
+    overflow:hidden;
+    background:url('../images/r1-hd-bg.jpg');
+    color:#131d77;
+}
+#header .logo{
+    float:left;
+    margin-top:10px;
+    margin-left:20px;
+}
+#header h1{
+    font-family:'Microsoft YaHei UI', 'Microsoft YaHei';
+    float:left;
+    font-size:18px;
+    font-weight:normal;
+    padding:0px;
+    margin:10px 0 0 20px;
+}
+#header h1 span{
+    display:block;
+    font-size:8px;
+}
+#header a:link, #header a:active, #header a:visited{
+    color:#2159a4;
+    text-decoration:none;
+    font-size:12px;
+    line-height:18px;
+    padding:5px;
+    display:block;
+    float:right;
+}
+#header a:hover{
+    color:#f90;
+}
+#header .selected{
+    color:#2159a4;
+}
+#header-system-change{
+    margin-right:30px;
+}
+#header-system-name:link,  #header-system-name:hover{
+    position:absolute;
+    top:35px;
+    right:10px;
+    line-height:18px;
+    padding:2px 5px !important;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #e5f1ff 0px, #e5f1ff 100%) repeat scroll 0 0;
+    border: 1px solid #a7c9f7;
+    border-bottom:1px solid #e2eaf7;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    cursor:default;
+    color:#2159a4 !important;
+}
+
+
+
+#system-list{
+    position:absolute;
+    z-index:1;
+    display:block;
+    height:400px;
+    overflow-y:scroll;
+    background-color:#eff5fd;
+    border:1px solid #c5dbfa;
+    border-bottom:0px;
+    -webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);
+    box-shadow:0 6px 12px rgba(0,0,0,.175);
+}
+#system-list ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    color:#2159A4;
+    font-size:12px;
+}
+#system-list li{
+    display:block;
+    height:30px;
+    line-height:26px;
+    cursor:pointer;
+    padding:0 20px;
+    border-bottom:1px solid #c5dbfa;
+}
+#system-list li:hover{
+    background-color:#e5edfe;
+}
+
+
+#menu-bg{
+    height:31px;
+    width:100%;
+    display:block;
+    overflow:hidden;
+    margin-top:59px;
+    background:url('../images/r1-menu-bg.gif');
+}
+#menu-root {
+    margin:0;
+    margin-left:20px;
+    padding:0;
+    list-style:none;
+}
+#menu-root li{
+    float:left;
+    display:block;
+    padding:0 5px;
+    height:27px;
+}
+#menu-root a:link, #menu-root a:active, #menu-root a:visited{
+    float:left;
+    color:#146FC0;
+}
+#menu-root a:hover{
+    color:#146FC0;
+}
+#menu-root .selected{
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fff 0px, #e2eaf7 100%) repeat scroll 0 0;
+    border: 1px solid #86afe6;
+    border-bottom:1px solid #e2eaf7;
+    color:#2159a4;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+
+#sidebar{
+    display:block;
+    width:230px;
+    position:fixed;
+    top:90px;
+    left:0px;
+    background-color:#fff;
+    border-right:4px solid #F0F5FB;
+    overflow:hidden;
+}
+#sidebar-button {
+    display:block;
+    width:10px;
+    height:40px;
+    text-align:center;
+    color:#dfdfdf;
+    position:fixed;
+    z-index:1;
+    top: 50%;
+    background-color:#F0F5FB;
+    overflow:hidden;
+    cursor:pointer;
+    border-radius:0 20px 20px 0;
+}
+#sidebar-button i{
+    position: absolute;
+    left:0px;
+    top: 50%;
+    margin-top: -7px;
+}
+
+
+.nav-root{
+    margin:0px 2px;
+    border:1px solid #cee3f2;
+    list-style:none;
+    padding:0;
+    font-size:12px;
+}
+.nav-root li{
+    color:#254193;
+    border-top:1px solid #F0F1F4;
+    background-color:#F0F5FB;
+    display:block;
+    width:100%;
+    text-indent:1em;
+    line-height:28px;
+    font-weight:bold;
+}
+.nav-root i{
+    text-indent:0 !important;
+    font-size:8px;
+    color:#cee3f2;
+}
+.nav-sub{
+    background-color:#fff;
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size:12px;
+}
+.nav-sub li{
+    color:#0D4077;
+    font-weight:normal;
+    background-color:#fff;
+    border-top:1px solid #F0F1F4;
+    display:block;
+    width:100%;
+    text-indent:3em;
+    min-height:26px;
+    cursor:pointer;
+}
+.nav-sub .selected{
+    color:#f90;
+}
+.nav-sub i{
+    text-indent:0 !important;
+    font-size:8px;
+    color:#efefef;
+}
+
+
+
+
+
+#content{
+    display:block;
+    overflow:hidden;
+    position:fixed;
+    top:90px;
+    left:240px;
+    background-color:#fefefe;
+}
+
+
+
+.img-circle{
+    border-radius: 50%;
+}
+
+
+/*
+    fix 滚动条
+*/
+.mCSB_inside > .mCSB_container {
+    margin-right: 0px;
+}
+.mCSB_scrollTools{
+    width: 5px;
+}

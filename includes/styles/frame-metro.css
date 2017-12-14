@@ -1,0 +1,134 @@
+﻿body
+{
+    font-family: Microsoft YaHei;
+    color: #777;
+}
+.header-bg
+{
+    height: 51px;
+    background-color: #f5f5f5;
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #F8F8F8 50%, #EAEAEA 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -ms-linear-gradient(rgb(255, 255, 255) 0%, rgb(248, 248, 248) 50%, rgb(234, 234, 234) 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f8f8f8 50%,#eaeaea 100%);
+    box-shadow: 0 1px 2px #8E8E8E;
+    overflow: hidden;
+}
+.header-logo
+{
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    top: 5px;
+    color: #2e2e2e;
+    font-size: 16px;
+    font-weight:normal;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.header-logo sup
+{
+    font-size:8px;
+}
+
+
+
+.header-user
+{
+    float: right;
+    padding: 12px 100px 0 0;
+}
+.header-user a:link, .header-user a:visited
+{
+    display: inline-block;
+    color: #777;
+    padding: 5px 8px 5px 8px;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.header-user a:active, .header-user a:hover
+{
+    display: inline-block;
+    color: #444;
+    padding: 5px 8px 5px 8px;
+    font-size: 12px;
+    text-decoration: none;
+    background: none repeat scroll 0 0 #E6E6E6;
+    border: 1px solid #DDDDDD;
+}
+
+
+
+.header-menu
+{
+    float: right;
+    padding-top: 12px;
+}
+.header-menu ul
+{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.header-menu li
+{
+    float: left;
+}
+.header-menu a:link, .header-menu a:visited
+{
+    display: block;
+    color: #777;
+    padding: 5px 8px 5px 8px;
+    margin: 0 2px;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.header-menu a:active, .header-menu a:hover
+{
+    display: block;
+    color: #444;
+    padding: 5px 8px 5px 8px;
+    margin: 0 2px;
+    font-size: 12px;
+    text-decoration: none;
+    background: none repeat scroll 0 0 #E6E6E6;
+    border: 1px solid #DDDDDD;
+}
+.header-menu a.selected
+{
+    display: block;
+    color: #444;
+    background: none repeat scroll 0 0 #E6E6E6;
+    border: 1px solid #DDDDDD;
+}
+.admin-menu-item
+{
+    text-indent:15px;
+    padding:5px 0;
+
+}
+
+
+
+
+.layout-panel-center .panel-title {
+    font-weight: normal;
+}
+#combo-list{
+    border:0px;
+}
+#combo-list div{
+    cursor: pointer;
+}
+.iframe {
+    /*margin: 2px;*/
+}
+.margin-space {
+    margin: 2px !important;
+}
+.padding-space {
+    padding: 2px !important;
+}
+

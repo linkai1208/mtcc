@@ -1,0 +1,272 @@
+﻿/*
+ * chairui
+ *
+ * 2016-04-15 增加上传附件相关样式
+ */
+
+.body{
+    margin:0;
+    padding:10px;
+    background-color:#fafafa;
+}
+
+
+.table-search {
+    border: 0px;
+    margin: 8px;
+}
+
+    .table-search td {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .table-search .table-search-title {
+        padding-left: 5px !important;
+        text-align: right;
+    }
+
+    .table-search .table-search-title-center {
+        text-align: center;
+    }
+
+    .table-search .easyui-linkbutton {
+        min-width: 40px;
+    }
+
+
+.table-layout-head {
+    margin: 10px 0px;
+    padding: 5px 20px;
+    background-color: #f7f7f7;
+    border-left: solid #eeeeee 6px;
+    font-size: 12px;
+}
+
+.table-layout {
+    border: 0px;
+    background-color:#fff;
+    min-width:450px;
+    font-size:12px;
+}
+
+    .table-layout td {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .table-layout th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size:14px;
+        font-weight:normal;
+        text-indent:2em;
+        text-align:left;
+    }
+    .table-layout tfoot td{
+        padding-left:30px;
+    }
+
+.table-layout-title {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 12px;
+    width: 130px;
+    white-space: nowrap;
+}
+.table-layout-border{
+    border-radius: 3px;
+    border-top: 3px solid #3c8dbc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom:20px;
+}
+.table-layout-margin {
+    margin-top: 20px;
+}
+
+
+fieldset{
+    border:1px solid #d4d4d4;
+}
+legend{
+    font-size: 100%;
+}
+
+
+.required {
+    color: #B94A48;
+}
+
+.warning {
+    color: #d44950;
+}
+
+.visibility{
+    visibility:hidden;
+}
+
+.info {
+    margin: 0px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    background-color: #fcf8e3;
+    border: 1px solid #faebcc;
+    color: #8a6d3b;
+}
+
+.left {
+    text-align: left !important;
+}
+
+
+
+/*
+    fix easyui
+*/
+.easyui-layout-margin{
+    margin: 2px !important;
+}
+.easyui-layout-center-padding{
+    padding: 2px !important;
+    border-color: #cee3f2;
+}
+
+.datagrid-sort-icon{
+    padding: 0 !important;
+}
+.datagrid-sort-asc .datagrid-sort-icon {
+    display: inline-block !important;
+    width: 13px;
+}
+.datagrid-sort-desc .datagrid-sort-icon{
+    display: inline-block !important;
+    width: 13px;
+}
+.datagrid-sort .datagrid-sort-icon {
+    display: inline-block !important;
+    width: 13px;
+}
+.datagrid-row-selected a:link,
+.datagrid-row-selected a:visited{
+    color:#fff !important;;
+}
+
+.easyui-linkbutton {
+    min-width: 60px;
+}
+.easyui-linkbutton-primary {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #337ab7 0px, #2e6da4 100%) repeat scroll 0 0;
+    border-color: #2e6da4;
+    color: #fff;
+}
+    .easyui-linkbutton-primary:hover {
+        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #2e6da4 0px, #286090 100%) repeat scroll 0 0;
+        border-color: #2e6da4;
+        color: #fff;
+    }
+
+@media \0screen\,screen\9 {
+    /* IE6、7、8 */
+    .easyui-linkbutton-primary {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#337ab7,endColorstr=#2e6da4,GradientType=0);
+        border: #2e6da4 1px solid;
+        background: #337ab7 repeat-x;
+        color: #fff;
+    }
+
+        .easyui-linkbutton-primary:hover {
+            background: #2e6da4;
+            color: #fff;
+            border: 1px solid #204d74;
+            filter: none;
+        }
+}
+
+
+
+
+.easyui-linkbutton-default {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #5bc0de 0px, #46b8da 100%) repeat scroll 0 0;
+    border-color: #46b8da;
+    color: #fff;
+}
+
+    .easyui-linkbutton-default:hover {
+        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #46b8da 0px, #269abc 100%) repeat scroll 0 0;
+        border-color: #46b8da;
+        color: #fff;
+    }
+
+@media \0screen\,screen\9 {
+    /* IE6、7、8 */
+    .easyui-linkbutton-default {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#337ab7,endColorstr=#2e6da4,GradientType=0);
+        border: #2e6da4 1px solid;
+        background: #337ab7 repeat-x;
+        color: #fff;
+    }
+
+        .easyui-linkbutton-default:hover {
+            background: #2e6da4;
+            color: #fff;
+            border: 1px solid #204d74;
+            filter: none;
+        }
+}
+
+
+/*
+    fix typeahead
+*/
+.tt-suggestion {
+    text-align: left;
+}
+.typeahead-input{
+    border: 1px solid #D4D4D4;
+    background-color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 2px 4px;
+    font-size: 12px;
+    /*-moz-border-radius: 5px 5px 5px 5px;*/
+    /*-webkit-border-radius: 5px 5px 5px 5px;*/
+    /*border-radius: 5px 5px 5px 5px;*/
+}
+.typeahead-delete{
+    width:24px;
+    height:24px;
+    display:inline-block;
+    background: #efefef url(../images/delete.png) no-repeat  center center;
+}
+
+
+.qq-uploader{
+    min-height: auto !important;
+    width:100px !important;
+    border:none !important;
+    padding: 5px !important;
+}
+.qq-upload-button{
+    padding: 5px !important;
+    width:90px !important;
+    margin-bottom: 0px !important;
+}
+
+.upload-file-list{
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+}
+.upload-file-list li{
+    padding: 5px;
+}
+.upload-file-list a:link,
+.upload-file-list a:visited,
+.upload-file-list a:hover
+{
+    margin-right: 5px;
+    text-decoration: none;
+}

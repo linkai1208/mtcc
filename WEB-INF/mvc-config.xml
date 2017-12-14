@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:task="http://www.springframework.org/schema/task"
+	   xmlns:cache="http://www.springframework.org/schema/cache"
+	   xsi:schemaLocation="http://www.springframework.org/schema/mvc
+	    http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/task
+		http://www.springframework.org/schema/task/spring-task.xsd
+		http://www.springframework.org/schema/cache
+		http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+    <task:annotation-driven/>
+
+	<!--<mvc:annotation-driven/>-->
+	<mvc:annotation-driven>
+		<mvc:path-matching suffix-pattern="false" />
+	</mvc:annotation-driven>
+
+	<mvc:resources location="/includes/" mapping="/includes/**"/>
+	<mvc:resources location="/temps/" mapping="/temps/**"/>
+
+	<bean class="com.sten.framework.util.SpringContextUtil"></bean>
+
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- Example: a logical view name of 'showMessage' is mapped to '/WEB-INF/jsp/showMessage.jsp' -->
+		<property name="prefix" value="/view/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+
+	<!-- 上传文件拦截，设置最大上传文件大小 10M=10*1024*1024(B)=10485760 bytes -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="maxUploadSize" value="104857600"/>
+	</bean>
+
+    <!-- ehcache 缓存 -->
+    <cache:annotation-driven cache-manager="cacheManager"/>
+    <bean id="ehcacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+        <property name="configLocation" value="classpath:ehcache.xml"/>
+    </bean>
+    <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">
+        <property name="cacheManager" ref="ehcacheManager"/>
+        <property name="transactionAware" value="true"/>
+    </bean>
+
+    <!-- 自定义拦截器 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**"/>
+			<mvc:exclude-mapping path="/public/**"/>
+			<mvc:exclude-mapping path="/download/**"/>
+			<mvc:exclude-mapping path="/login/**"/>
+			<bean class="com.sten.framework.interceptor.BaseInterceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<context:component-scan base-package="com.sten.mtcc.controller"/>
+	<context:component-scan base-package="com.sten.mtcc.service"/>
+	<context:component-scan base-package="com.sten.admin.controller"/>
+	<context:component-scan base-package="com.sten.admin.service"/>
+	<context:component-scan base-package="com.sten.framework.controller"/>
+	<context:component-scan base-package="com.sten.framework.service"/>
+	<context:property-placeholder location="classpath:*.properties" file-encoding="UTF-8"/>
+
+</beans>
+

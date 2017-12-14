@@ -1,0 +1,238 @@
+.tableFrame
+{
+	width:98%;
+	background:white;
+	border:1px #aaccef solid;
+
+}
+.tableFrame thead
+{
+	background:#eaf1fc url('../../includes/images/tableHead.gif') repeat-x;
+	color:#004499;
+	text-align:left;
+}
+.tableFrame thead th
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	border-bottom:1px #aaccef solid;
+}
+.tableFrame .subHeader td
+{
+	background-color:#d3e4f6;
+	text-align:left;
+	padding-top:3px;
+	padding-bottom:3px;
+	color:#444;
+}
+.scrollDiv
+{
+	overflow: auto;
+	width:100%;
+	height:450px;
+	scrollbar-face-color: #f0f1f3;
+	scrollbar-hightlight-color: #ededed; 
+	scrollbar-shadow-color: #ededed; 
+	scrollbar-3dlight-color: #ededed;
+	scrollbar-arrow-color: #336000;
+	scrollbar-track-color: #ffffff;
+	scrollbar-darkshadow-color: #ffffff;
+}
+
+.tableFrame tfoot
+{
+	background-color:#d3e4f6;
+	line-height:28px;
+}
+.tableFrame .command
+{
+	float:left;
+	padding-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+
+	_padding-top:8px;
+	_padding-bottom:8px;
+	
+}
+.tableFrame .nav
+{
+	float:right;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+
+	_padding-top:8px;
+	_padding-bottom:8px;
+	
+}
+.tableFrame .goToInput
+{
+	border: 1px solid #7F9DB9;
+	height: 13px;
+	font-size:12px;
+	text-align:center;
+}
+
+
+
+
+
+.tableContent
+{
+	border:0px;
+	color:#444;
+	width:100%;
+}
+.tableContent .tdSelect
+{
+	padding-left:10px;
+}
+.tableContent .tr0 td
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:white;
+}
+.tableContent .tr1 td
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:#f8f8f8;
+}
+.tableContent .trSelect td
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:#dce8f6;
+}
+
+
+
+
+
+input.goToButton
+{
+	border-width:1px;
+	border-style:solid;
+	border-color:#a1badf;
+	background:url("../../includes/images/extButtonSmall.gif") repeat-x;
+	background-color:#f2f2ed;
+	height:20px;
+	width:23px;
+	cursor:hand;
+}
+input.smallButton
+{
+	border-width:1px;
+	border-style:solid;
+	border-color:#a1badf;
+	background:url("../../includes/images/extButtonSmall.gif") repeat-x;
+	background-color:#f2f2ed;
+	height:20px;
+	cursor:hand;
+	
+	padding:0px 8px;
+	padding-bottom:3px;
+	
+	_line-height:18px;
+	_padding:0px 0px;
+
+}
+input.bigButton
+{
+	border-width:1px;
+	border-style:solid;
+	border-color:#a1badf;
+	background:url("../../includes/images/extButtonBig.gif") repeat-x;
+	background-color:#f2f2ed;
+	font-size:16px;
+	height:30px;
+	line-height:28px;
+	padding:0px 5px;
+}
+input.configButton
+{
+	border-width:0px;
+	background:url("../../includes/images/btnConfig.gif") repeat-x;
+	background-color:#f2f2ed;
+	height:20px;
+	width:23px;
+	cursor:hand;
+}
+input.searchButton
+{
+	border-width:0px;
+	background:url("../../includes/images/btnSearch.gif") repeat-x;
+	background-color:#f2f2ed;
+	height:20px;
+	width:23px;
+	cursor:hand;
+}
+input.exportButton
+{
+	border-width:0px;
+	background:url("../../includes/images/btnExport.gif") repeat-x;
+	background-color:#f2f2ed;
+	height:20px;
+	width:23px;
+	cursor:hand;
+}
+
+
+.input
+{
+	border: 1px solid #7F9DB9;
+	height: 21px;
+	line-height:18px;
+	font-size:12px;
+	text-align:left;
+	background-color:#FFFFFF;
+	width:148px;
+}
+.select
+{
+	border: 1px solid #7F9DB9;
+	height: auto;
+	font-size:12px;
+	text-align:left;
+	background-color:#FFFFFF;
+}
+.tableRecord{
+	margin-top:5px; 
+	border:1px solid #AACCEF; 
+	background-color:#D3E4F6; 
+	line-height:25px; 
+	font-weight:bold;
+	color:#0074CE
+}
+.tdElement{
+	background-color:#D3E4F6; 
+	font-weight:bold;
+}
+.tableActivity{
+	margin-top:0px; 
+	border:1px solid #AACCEF; 
+	border-top:0px;  
+	line-height:25px;
+}
+input.middleButton
+{
+	border-width:1px;
+	border-style:solid;
+	border-color:#a1badf;
+	background:url("../../includes/images/extButtonSmall.gif") repeat-x;
+	background-color:#f2f2ed;
+	height:20px;
+	cursor:hand;
+	padding:0px 8px;
+	padding-bottom:3px;
+	
+	_line-height:18px;
+	_padding:0px 0px;
+	padding:0px 18px;
+	margin-top:10px;
+
+}
+
